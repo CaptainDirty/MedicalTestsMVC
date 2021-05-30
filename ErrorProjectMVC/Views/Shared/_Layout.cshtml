@@ -28,8 +28,11 @@
         </div>
     </header>
     <section class="banner">
+        @RenderSection("featured", required: false)
         <div class="banner">
             @RenderBody()
+            @RenderSection("featured", required: false)
+            @RenderSection("scripts", required: false)
         </div>
     </section>
         <div class="p_footer">

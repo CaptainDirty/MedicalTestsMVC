@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Медицинские анализы</title>
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div>
+            <div class="wrapper">
+                <nav>
+                    <ul class="nav">
+                        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Личный кабинет", "Cabinet", "Home")</li>
+                        <li>@Html.ActionLink("О программе", "About", "Home")</li>
+                        <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                        <li>@Html.Partial("_LoginPartial")</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner">
+            @RenderBody()
+        </div>
+    </section>
+        <div class="p_footer">
+            <footer class="footer">
+                <p>&copy; 2021 - Кафедра "Теплофизика и информатика в металлургии" УрФУ, г. Екатеринбург</p>
+            </footer>
+        </div>
+</body>
+</html>

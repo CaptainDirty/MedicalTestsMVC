@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Кабинет пользователя";
+}
+<h1><center>Личный кабинет</center></h1>
+<body>
+</body>
+<aside>
+    <h3>Таблицы базы данных</h3>
+    <p>
+        Просмотр и редактирование данных в таблицах
+    </p>
+    <nav>
+        <ul class="cabinet-text">
+            <li>@Html.ActionLink("Категории ошибок", "Index", "Categories")</li>
+            <li>@Html.ActionLink("Программные модули", "Index", "Modules")</li>
+            <li>@Html.ActionLink("Статусы ошибок", "Index", "Statuses")</li>
+            <li>@Html.ActionLink("Разработчики", "Index", "Razrabotchiki")</li>
+            <li>@Html.ActionLink("Ошибки", "Index", "Oshibki")</li>
+        </ul>
+        </nav>
+</aside>
+<aside>
+    <h3><center>Просмотреть график статусов ошибок</center></h3>
+    <ul class="cabinet-graph">
+        <li>@Html.ActionLink("График", "Grafic", "Home")</li>
+    </ul>
+</aside>

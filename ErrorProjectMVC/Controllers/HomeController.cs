@@ -22,7 +22,7 @@ namespace MedicalTestsMVC.Controllers
         // GET: About
         public ActionResult About()
         {
-            ViewBag.Message = "Документирование ошибок программного обеспечения";
+            ViewBag.Message = "Документирование медицинских анализов";
             ViewBag.Assembly = "Версия " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
             return View();
@@ -31,7 +31,7 @@ namespace MedicalTestsMVC.Controllers
         // GET: Contact
         public ActionResult Contact()
         {
-            ViewBag.Message = "Головко Яна Вячеславовна";
+            ViewBag.Message = "Болотов Александр Александрович";
             return View();
         }
       

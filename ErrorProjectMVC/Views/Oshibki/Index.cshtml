@@ -19,13 +19,13 @@
     <form method="post">
         <div class=" form-inline">
             <h2>Выберите один из пунктов и нажмите кнопку "Фильтр"!</h2>
-            <label class=" control-label">Модули: </label>
+            <label class=" control-label">Направления: </label>
             @Html.DropDownList("ID_Module", null, "Все",
                htmlAttributes: new { @class = "form-control" })
-            <label class=" control-label"> или Категории: </label>
+            <label class=" control-label"> или Специальности: </label>
             @Html.DropDownList("ID_Category", null, "Все",
               htmlAttributes: new { @class = "form-control" })
-            <label class=" control-label"> или Разработчики: </label>
+            <label class=" control-label"> или Врачи: </label>
             @Html.DropDownList("ID_Razrabotchik", null, "Все",
               htmlAttributes: new { @class = "form-control" })
             <label class=" control-label">  или Статусы: </label>

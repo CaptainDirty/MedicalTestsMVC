@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<MedicalTests.Domain.Oshibki>
 
 @{
-    ViewBag.Title = "Данные об ошибках";
+    ViewBag.Title = "Анализы";
 }
 
 @ViewBag.MessageTest
 
-<h2><center>Данные об ошибках</center></h2>
+<h2><center>Анализы</center></h2>
 
 <h2 class="cabinet-analyz">
-    @Html.ActionLink("Добавить ошибку", "Create")
+    @Html.ActionLink("Добавить анализ", "Create")
 </h2>
 
 @using (Html.BeginForm("Index", "Oshibki", FormMethod.Post))

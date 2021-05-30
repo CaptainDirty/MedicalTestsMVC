@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<MedicalTests.Domain.Razrabotchiki>
 
 @{
-    ViewBag.Title = "Разработчики";
+    ViewBag.Title = "Врачи";
 }
 
-<h2>Разработчики</h2>
+<h2>Врачи</h2>
 <body>
 </body>
 @using (Html.BeginForm("Index", "Razrabotchiki", FormMethod.Post))
@@ -15,7 +15,7 @@
     </p>
 }
 <p>
-    @Html.ActionLink("Добавть разработчика", "Create")
+    @Html.ActionLink("Добавть врача", "Create")
 </p>
 <table class="table">
     <tr>

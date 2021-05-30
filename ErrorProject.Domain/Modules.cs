@@ -17,8 +17,8 @@ namespace MedicalTests.Domain
         /// <summary>
         /// наименование модуля
         /// </summary>
-        [Required(ErrorMessage = "Вы не ввели наименование программного модуля")]
-        [Display(Name = "Наименование программного модуля")]
+        [Required(ErrorMessage = "Вы не ввели наименование направления")]
+        [Display(Name = "Наименование направления")]
         public string NameModule { get; set; }
 
         public UserProfile Owner { get; set; }

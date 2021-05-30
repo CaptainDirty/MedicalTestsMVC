@@ -17,8 +17,8 @@ namespace MedicalTests.Domain
         /// <summary>
         /// Наименование статуса
         /// </summary>    
-        [Required(ErrorMessage = "Вы не ввели наименование статуса ошибки программного обеспечения")]
-        [Display(Name = "Наименование статуса ошибки программного обеспечения")]
+        [Required(ErrorMessage = "Вы не ввели наименование статуса анализа")]
+        [Display(Name = "Наименование статуса анализа")]
         public string NameStatus { get; set; }
 
         public UserProfile Owner { get; set; }

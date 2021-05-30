@@ -17,20 +17,20 @@ namespace MedicalTests.Domain
         /// <summary>
         /// фамилия разработчика
         /// </summary>  
-        [Required(ErrorMessage = "Вы не ввели фамилию разработчика")]
-        [Display(Name = "Фамилия разработчика")]
+        [Required(ErrorMessage = "Вы не ввели фамилию врача")]
+        [Display(Name = "Фамилия врача")]
         public string Surname { get; set; }
 
         /// <summary>
         /// имя разработчика
         /// </summary> 
-        [Display(Name = "Имя разработчика")]
+        [Display(Name = "Имя врача")]
         public string Name { get; set; }
 
         /// <summary>
         /// отчество разработчика
         /// </summary>
-        [Display(Name = "Отчество разработчика")]
+        [Display(Name = "Отчество врача")]
         public string Thirdname { get; set; }
 
         /// <summary>
